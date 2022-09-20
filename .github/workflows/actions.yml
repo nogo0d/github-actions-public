@@ -15,6 +15,6 @@ jobs:
         run: echo "${{ steps.first.outputs.time }}"
 
       - name: Does checkout
-        uses: actions/checkout
+        uses: actions/checkout@v1
       - name: Lists folder
         run: ls -altr
