@@ -13,3 +13,6 @@ jobs:
           who-to-greet: José
       - name: After greeting
         run: echo "${{ steps.first.outputs.time }}"
+
+      - name: Lists folder
+        run: ls -altr
