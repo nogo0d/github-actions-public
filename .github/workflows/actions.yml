@@ -14,5 +14,7 @@ jobs:
       - name: After greeting
         run: echo "${{ steps.first.outputs.time }}"
 
+      - name: Does checkout
+        uses: actions/checkout
       - name: Lists folder
         run: ls -altr
