@@ -11,10 +11,5 @@ jobs:
         uses: actions/hello-world-javascript-action@v1
         with:
           who-to-greet: José
-      - name: After greeting
-        run: echo "${{ steps.first.outputs.time }}"
-
-      
-      
-      
-
+      # - name: After greeting
+      #   run: echo "${{ steps.first.outputs.time }}"
