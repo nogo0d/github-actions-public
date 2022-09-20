@@ -1,0 +1,20 @@
+name: Shell commands
+
+on: [push]
+
+jobs:
+  run-actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Javascript action
+        id: first
+        uses: actions/hello-world-javascript-action@v1
+        with:
+          who-to-greet: José
+      - name: After greeting
+        run: echo "${{ steps.first.outputs.time }}"
+
+      
+      
+      
+
